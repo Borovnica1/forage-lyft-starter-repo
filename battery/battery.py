@@ -11,7 +11,7 @@ def add_years(d, years):
             return d.replace(year=new_year, day=28)
         raise
     
-class Battery:
+class Battery(ABC):
     def __init__(self):
         pass
     

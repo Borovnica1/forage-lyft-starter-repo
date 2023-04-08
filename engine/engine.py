@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
     
     
-class Engine:
+class Engine(ABC):
     def __init__(self):
         pass
     
