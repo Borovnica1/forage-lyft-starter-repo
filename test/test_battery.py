@@ -14,7 +14,7 @@ class TestSpindlerBattery(unittest.TestCase):
 
     def test_battery_should_not_be_serviced(self):
         today = datetime.today().date()
-        last_service_date = today.replace(year=today.year - 4)
+        last_service_date = today.replace(year=today.year - 2)
 
         battery = SpindlerBattery(today, last_service_date)
         self.assertFalse(battery.needs_service())
